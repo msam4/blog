@@ -36,8 +36,4 @@ class BlogPostTest < ActiveSupport::TestCase
   test "scheduled? returns false for published blog post" do
     refute blog_posts(:published).scheduled?
   end
-
-  # def draft_blog_post
-  #   BlogPost.new(published_at: nil)
-  # end
 end
